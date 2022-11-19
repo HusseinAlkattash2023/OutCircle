@@ -52,11 +52,61 @@
     display: flex;
     flex-direction: column;
     height: 500px;
-}
-.register_ .formRegister .forms a {
     position: relative;
-
+    align-items: center;
+    width: 500px;
+    left: 100px;
 }
+.register_ .formRegister .forms .first{
+    position:absolute;
+    transition: all 0.5s ease;
+    left: 0;
+}
+.register_ .formRegister .forms .second{
+    position:absolute;
+    /* right:0px; */
+}
+.register_ .formRegister .forms .three{
+    position:absolute;
+    /* right:0px; */
+    top: 130px;
+    left: 120px;
+}
+.register_ .formRegister .forms .four{
+    position:absolute;
+    bottom: 220px;
+    left: 10px;
+}
+.register_ .formRegister .forms .fife{
+    position:absolute;
+    bottom: 225px;
+    left: 230px;
+}
+.register_ .formRegister .forms .fife{
+    position:absolute;
+}
+ .register_ .formRegister .forms ._circle{
+    position: absolute;
+    top:0;
+    left: 0px;
+    z-index: 11;
+}
+.register_ .formRegister .forms ._circlehover{
+    position: absolute;
+    top:0;
+    left: 0px;
+    z-index: 1;
+    transition: all 0.5s ease;
+} 
+.register_ .formRegister .forms .first:hover.first ._circlehover,
+.register_ .formRegister .forms .second:hover.second ._circlehover,
+.register_ .formRegister .forms .three:hover.three ._circlehover,
+.register_ .formRegister .forms .four:hover.four ._circlehover,
+.register_ .formRegister .forms .fife:hover.fife ._circlehover{
+    z-index: 22;
+}
+ 
+ 
 
 .register_ .backgroundRegister img{
     width: 30%;

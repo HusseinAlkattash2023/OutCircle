@@ -3,6 +3,7 @@ import Circle from '../../component/Circle/Circle_ar'
 import './Croporate.css'
 import {Link} from 'react-router-dom'
 import back from '../../images/back.png'
+import image from '../../images/Component 31 – 24.png'
 function Croporate_ar() {
   return (
     <div className='croporate'>
@@ -11,6 +12,7 @@ function Croporate_ar() {
                 <span>رجوع</span>   
             </Link>
         <Circle 
+        circle={image}
         demand1="corporate/service_1"
         demand2="corporate/service_2"
         demand3="corporate/service_3"

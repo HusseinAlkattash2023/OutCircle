@@ -6,6 +6,7 @@ import back from '../../images/back.png'
 import logout from '../../images/logout.png'
 import notifications from '../../images/notification.png';
 import profile from '../../images/profile.png'
+import image from '../../images/New folder/Group 430.png'
 function Handicraft({handicraft_}) {
   const ClearLocalStorate = ()=>{
     localStorage.clear();
@@ -38,6 +39,7 @@ function Handicraft({handicraft_}) {
                     )
                 }
         <Circle 
+        circle={image}
         demand1="handicraft/service_1"
         demand2="handicraft/service_2"
         demand3="handicraft/service_3"

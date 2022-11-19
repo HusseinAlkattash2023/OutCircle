@@ -2,48 +2,50 @@ import React from 'react'
 import update from '../../../images/update.png'
 import file from '../../../images/file.png';
 
-const InstituteInfo = () => {
+const InstituteInfo = ({value}) => {
   return (
     <div>
         <div className='information'>
-          <p>institute name</p>
+            <input type="text" defaultValue={value || "institute name"}/>
+            <div>
+                <img src={update} alt=""/>
+            </div>
+        </div>
+        <div className='information'>
+            <input type="text" defaultValue={value || "institute record number"}/>
+        </div>
+        <div className='information'>
+            <input type="text" defaultValue={value || "Actual start date"}/>
+        </div>
+        <div className='information'>
+          <input type="text" defaultValue={value || "Current city"}/>
           <img src={update} alt=""/>
         </div>
         <div className='information'>
-          <p>institute record number</p>
-        </div>
-        <div className='information'>
-          <p>institute record date</p>
-        </div>
-        <div className='information'>
-          <p>Current city</p>
+          <input type="text" defaultValue={value || "Current address"}/>
           <img src={update} alt=""/>
         </div>
         <div className='information'>
-          <p>Current address</p>
+          <input type="text" defaultValue={value || "institute's detailed business active"}/>
           <img src={update} alt=""/>
         </div>
         <div className='information'>
-          <p>institute's detailed business active</p>
+          <input type="text" defaultValue={value || "institute email address"}/>
           <img src={update} alt=""/>
         </div>
         <div className='information'>
-          <p>institute email address</p>
+          <input type="text" defaultValue={value || "Actual start date"}/>
+        </div>
+        <div className='information'>
+          <input type="text" defaultValue={value || "Phone number"}/>
           <img src={update} alt=""/>
         </div>
         <div className='information'>
-          <p>Actual start date</p>
-        </div>
-        <div className='information'>
-          <p>Phone number</p>
+          <input type="text" defaultValue={value || "Fax number"}/>
           <img src={update} alt=""/>
         </div>
         <div className='information'>
-          <p>Fax number</p>
-          <img src={update} alt=""/>
-        </div>
-        <div className='information'>
-          <p>Landline extension</p>
+          <input type="text" defaultValue={value || "Landline extension"}/>
           <img src={update} alt=""/>
         </div>
         <div className='information'>

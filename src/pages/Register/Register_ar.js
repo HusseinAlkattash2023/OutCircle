@@ -14,7 +14,7 @@ import circleHover4 from '../../images/New folder/Component 31 – 11.png';
 import circleHover5 from '../../images/New folder/Component 31 – 9.png';
 import mask from '../../images/Mask.png'
 import { Link } from 'react-router-dom'
-function Register() {
+function Register_ar() {
   return (
     <div className='register_'> 
         <header>
@@ -30,16 +30,16 @@ function Register() {
         <section className='formRegister'>
           <div className='forms'>
             <div className="first">
-              <Link to="/register_coporate" className='me-3'>
-                  <img src={circle1} alt="" width="220px" className='_circle'/>
-                  <img src={circleHover1} alt="" width="220px" className='_circlehover'/>
-              </Link>
+                <Link to="/register_coporate" className='me-3'>
+                    <img src={circle1} alt="" width="220px" className='_circle'/>
+                    <img src={circleHover1} alt="" width="220px" className='_circlehover'/>
+                </Link>
             </div>
             <div className="second">
-              <Link to="/register_institute" className='ms-3'>
-                  <img src={circle2} alt="" width="220px" className='_circle'/>
-                  <img src={circleHover2} alt="" width="220px" className='_circlehover'/>
-              </Link>
+                <Link to="/register_institute" className='ms-3'>
+                    <img src={circle2} alt="" width="220px" className='_circle'/>
+                    <img src={circleHover2} alt="" width="220px" className='_circlehover'/>
+                </Link>
             </div>
             <div className="three">
               <Link to="/register_prof">
@@ -68,4 +68,4 @@ function Register() {
   )
 }
 
-export default Register
+export default Register_ar;

@@ -1,35 +1,41 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import update from '../../../images/update.png'
-const PersonalInfo = () => {
+const PersonalInfo = ({value}) => {
   return (
     <div>
         <div className='information'>
-          <p>User name</p>
+              <input type="text" value="User name"/>
         </div>
         <div className='information'>
-          <p>***********</p>
-          <Link to="/change_password">
+            <input type="password" value={"**********"}/>
+            <Link to="/change_password">
               <img src={update} alt=""/>
-          </Link>
+            </Link>
         </div>
         <div className='information'>
-          <p>Full name</p>
+          <input type="text" value="Full name"/>
         </div>
         <div className='information'>
-          <p>Born date</p>
+          <input type="text" value="Born date"/>
         </div>
         <div className='information'>
-          <p>Mobile number</p>
-          <img src={update} alt=""/>
+            <input type="text" defaultValue={value || "Mobile number"}/>
+            <div>
+                <img src={update} alt=""/>
+            </div>
         </div>
         <div className='information'>
-          <p>WhatsApp number</p>
-          <img src={update} alt=""/>
+            <input type="text" defaultValue={value || "Whatsapp number"}/>
+            <div>
+                <img src={update} alt=""/>
+            </div>
         </div>
         <div className='information'>
-          <p>E-mail address</p>
-          <img src={update} alt=""/>
+            <input type="email" defaultValue={value || "E-mail address"}/>
+            <div>
+              <img src={update} alt=""/>
+            </div>
         </div>
     </div>
   )

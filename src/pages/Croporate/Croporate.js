@@ -3,6 +3,7 @@ import Circle from '../../component/Circle/Circle'
 import './Croporate.css'
 import {Link} from 'react-router-dom'
 import back from '../../images/back.png'
+import image from '../../images/New folder/Group 428.png'
 function Croporate() {
   return (
     <div className='croporate'>

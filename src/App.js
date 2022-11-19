@@ -29,6 +29,7 @@ import ProfileScientific from './pages/ProfileScientific/ProfileScientific';
 import ServiceInstitute from './pages/ServiceInstitute/ServiceInstitute';
 import ProfileInstitute from './pages/ProfileInstitue/ProfileInstitute';
 import {HomeAr , WhyUsAr , GoalsAr , CorporateAr , HandicraftAr , InstituteAr , LoginAr , ScientificAr , IndividualsAr , CareerServicesAr} from './index_';
+import {RegisterAr , PersonalServicesAr} from './index_'
 import CorporateService1 from './pages/CorporateServices/CorporateService_1/CorporateService_1'
 import CorporateService2 from './pages/CorporateServices/CorporateService_2/CorporateService_2'
 import CorporateService3 from './pages/CorporateServices/CorporateService_3/CorporateService_3';
@@ -314,6 +315,12 @@ function App () {
   },{
     path:"/careerservice",
     element:<CareerServicesAr/>
+  },{
+    path:"/register",
+    element:<RegisterAr/>
+  },{
+    path:"/personalservices",
+    element:<PersonalServicesAr/>
   }
 ]
   return (

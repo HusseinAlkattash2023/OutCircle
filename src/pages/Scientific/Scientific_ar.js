@@ -5,7 +5,8 @@ import {Link} from 'react-router-dom'
 import back from '../../images/back.png';
 import logout from '../../images/logout.png'
 import notifications from '../../images/notification.png';
-import profile from '../../images/profile.png'
+import profile from '../../images/profile.png';
+import image from '../../images/Component 31 – 26.png'
 function Scietific({sceintific_}) {
     
     const ClearLocalStorate = ()=>{
@@ -39,6 +40,7 @@ function Scietific({sceintific_}) {
                     )
                 }
         <Circle 
+        circle={image}
         demand1="scientific/service_1"
         demand2="scientific/service_2"
         demand3="scientific/service_3"

@@ -2,7 +2,21 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import password from '../../images/password.svg'
 import './ForgetPass.css'
+import Axios from "axios";
+
 const ForgetPass = ({ResetPassword}) => {
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    Axios.post("http://localhost:8000/api/users/forget-password?email=husseinalkattash2023@gmail.com")
+    .then(res => {
+      console.log(res.data);
+    })
+    .catch(err => {
+      console.log(err);
+    })
+  }
+
   return (
     <div className='forgetpass'>
         <header>
@@ -11,10 +25,10 @@ const ForgetPass = ({ResetPassword}) => {
         </header>
         <form>
             <div className='pass'>
-            <label>Write your email or mobile number</label>
-            <input type="email"/> 
+            <label>Please Write your email</label>
+            {/* <input type="email"/>  */}
             </div>
-            <button type='submit' onClick={ResetPassword}>
+            <button type='submit' onClick={handleSubmit}>
                 Submit
             </button>
         </form>

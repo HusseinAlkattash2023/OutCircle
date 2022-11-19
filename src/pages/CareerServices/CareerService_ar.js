@@ -3,6 +3,7 @@ import Circle from '../../component/Circle/Circle_ar'
 import './CareerServices.css'
 import {Link} from 'react-router-dom'
 import back from '../../images/back.png';
+import image from '../../images/Component 31 – 28.png'
 function CareerServices() {
   return (
     <div className='careerServices'>
@@ -13,6 +14,7 @@ function CareerServices() {
             </Link>
         </header>
         <Circle 
+        circle={image}
         demand1="careerservice/service_1"
         demand2="careerservice/service_2"
         demand3="careerservice/service_3"

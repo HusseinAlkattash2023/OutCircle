@@ -6,7 +6,7 @@ import back from '../../images/back.png'
 import logout from '../../images/logout.png'
 import notifications from '../../images/notification.png';
 import profile from '../../images/profile.png'
-
+import image from '../../images/Component 31 – 25.png'
 function Institute_ar() {
 return (
     <div className='institute'>
@@ -15,6 +15,7 @@ return (
                 <span>رجوع</span>
             </Link>
         <Circle 
+        circle={image}
         demand1="institute/service_1"
         demand2="institute/service_2"
         demand3="institute/service_3"

@@ -61,20 +61,20 @@ function Login_ar() {
         let errors = {};
         const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
         if (!values.email) {
-          errors.email = "Please enter email";
+            errors.email = "Please enter email";
         } else if (!regex.test(values.email)) {
-          errors.email = "Invalid email format";
+            errors.email = "Invalid email format";
         }
         if (!values.password) {
-          errors.password = "Please enter password";
+        errors.password = "Please enter password";
         } else if (values.password.length < 4) {
-          errors.password = "Password must be more than 4 characters";
+            errors.password = "Password must be more than 4 characters";
         }
         if(!values.user_type){
             errors.user_type = "Please enter account";
         }
         return errors;
-      };
+    };
     
     return (
     <div className='login'>

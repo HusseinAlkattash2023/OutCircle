@@ -39,14 +39,14 @@ function Login() {
         e.preventDefault();
         setFormErrors(validate(formValues))
         setIsSubmitting(true);
-        Axios.get(`http://localhost:8000/users?${`email=${formValues.email}`}&${`password=${formValues.password}`}&${`user_type=${formValues.user_type}`}`)
+        Axios.get(`http://localhost:8000/api/users/user-info?${`input=${formValues.email}`}&${`password=${formValues.password}`}&${`user_type=${formValues.user_type}`}`)
         .then((res)=>{
-            console.log(res)
-            if(res.data === "Error !!!" || res.data === "عذراً الإيميل الذي ادخلته غير موجود ، رجاءً أدخل إيميل آخر من فضلك ..." || res.data === "كلمة السر التي أدخلتها غير صحيحة ، من فضلك أعد إدخال كلمة السر بشكل صحيح .."){
+            let data = res.data;
+            if(typeof data === "string"){
                 toast.error(res.data)
             }else{
                 toast.success("Successed")
-                localStorage.setItem('items', JSON.stringify({ ...formValues }));
+                localStorage.setItem('user-info', JSON.stringify(data));
             }
         })
         .catch((err)=>{

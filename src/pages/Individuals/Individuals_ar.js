@@ -4,7 +4,8 @@ import back from '../../images/back.png'
 import circle from '../../images/circle.svg'
 import logout from '../../images/logout.png'
 import notifications from '../../images/notification.png';
-import profile from '../../images/profile.png'
+import profile from '../../images/profile.png';
+import image from '../../images/Component 31 – 28.png'
 import './Individuals.css'
 function Individuals({individual_ , setIndividual_}) {
     const ClearLocalStorate = ()=>{
@@ -38,8 +39,7 @@ function Individuals({individual_ , setIndividual_}) {
                     )
                 }
             <div className='individual_ar'>
-                <img src={circle} alt="" width="260px"/>
-                <span>أفراد</span>
+                <img src={image} alt="" width="260px"/>
             </div>
             <div className='services_ar'>
                 <Link to="/careerservice" className='career'>

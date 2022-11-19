@@ -13,19 +13,19 @@ import logo from "../../images/Group 360.svg"
 import user from "../../images/user.png"
 import outcircle from '../../images/OUTCIRCLE.svg'
 import es from '../../images/1667844570962.png'
-import i1 from '../../images/serviceAr/Component 16 – 10.svg'
-import i2 from '../../images/serviceAr/Component 16 – 9.svg'
-import i3 from '../../images/serviceAr/Component 16 – 8.svg'
-import i4 from '../../images/serviceAr/Component 16 – 7.svg'
-import i5 from '../../images/serviceAr/Component 16 – 6.svg'
-import iui1 from '../../images/serviceAr/hover/Component 16 – 10.svg'
-import iui2 from '../../images/serviceAr/hover/Component 16 – 9.svg'
-import iui3 from '../../images/serviceAr/hover/Component 16 – 8.svg'
-import iui4 from '../../images/serviceAr/hover/Component 16 – 7.svg'
-import iui5 from '../../images/serviceAr/hover/Component 16 – 6.svg'
+import i1 from '../../images/serviceAr/Group 519.png'
+import i2 from '../../images/serviceAr/Group 322.png'
+import i3 from '../../images/serviceAr/Component 16 – 8.png'
+import i4 from '../../images/serviceAr/Component 16 – 7.png'
+import i5 from '../../images/serviceAr/Group 521.png'
+import iui1 from '../../images/serviceAr/hover/Group 518.png'
+import iui2 from '../../images/serviceAr/hover/Group 520.png'
+import iui3 from '../../images/serviceAr/hover/Group 519.png'
+import iui4 from '../../images/serviceAr/hover/Group 521.png'
+import iui5 from '../../images/serviceAr/hover/Group 522.png'
 import { useNavigate } from 'react-router-dom';
 import './Home.css'
- 
+import image from '../../images/Group 287.png'
 
 function HomeAr({setShow_Ar}) {
   const Show_Ar = ()=>{
@@ -107,9 +107,9 @@ function HomeAr({setShow_Ar}) {
         </div>  
         <footer className="footer_ar">
         <Link to="/ads">
-            <div className="put_ads">
-                <p>ضع اعلانك هنا</p>
-            </div>
+          <div className="put-ads">
+            <img src={image} alt=""/>
+          </div>
         </Link>
         <div className='icons_ar'>
             <ul>
